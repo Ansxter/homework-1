@@ -39,7 +39,7 @@ if not product_summary.empty:
     top_product_line = product_summary.loc[product_summary["Total_Sales"].idxmax(), "Product line"]
     print("\n總銷售額最高的產品線:", top_product_line)
 else:
-    print("\n⚠️ 沒有符合條件的產品線資料")
+    print("\n沒有符合條件的產品線資料")
 
 
 product_summary.to_csv("0520_pandas_3OK.CSV", index=False)
